@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This website is a brief history of the Internet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Docker, Linux, and Containerization</title>
+</head>
+<body>
+<h2>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="index.html">IS601</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Docker, Linux, and Containerization
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="virtualization.html">Virtualization</a>
+                            <a class="dropdown-item active" href="containerization.html">Containerization</a>
+                            <a class="dropdown-item" href="compare.html">Virtualization vs Containerization</a>
+                            <a class="dropdown-item" href="webtutorial.html">Tutorial: Web Server with Docker</a>
+                            <a class="dropdown-item" href="linux.html">Linux Commands</a>
+                            <a class="dropdown-item" href="pytutorial.html">Tutorial: Docker and Python</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1></h1>
+            <p></p>
+            <h2>What is Containerization?</h2>
+            <p>
+                Containerization is a type of virtualization that brings virtualization to the operating system(OS)
+                level. Virtualization(link) dissolved the need for extra hardware and containerization dissolved the
+                need for a hypervisor/ extra guest OS.
+            </p>
+            <p></p>
+            <img src="images/vc.png" class="card-img-top" alt="..." style="height: 500px">
+            <p></p>
+            <p>
+                Containerization eliminates the need for a guest OS in order to utilize the Host OS, so it is a much
+                more efficient type of virtualization. Binaries and libraries that are specific to the application run
+                on the host kernel, so the application is able to run quickly. Each container holds only the binaries
+                and libraries necessary for the application, and all containers share the host OS, which makes
+                containers much more lightweight than the virtual machines. Also the fact that each container holds only
+                the dependencies necessary to run the application ensures that containers do not waste resources. The
+                containers are handled by the containerization layer, which requires a software to enable. The most
+                commonly used container platform is called Docker (link).
+            </p>
+            <p>
+                Docker is a platform that packages an application and all of its dependencies together in the form of a
+                container. Docker enables applications to be seamlessly moved and accessed in any environment. As
+                previously stated, each application runs in a separate container. This independence provides confidence
+                to developers that the applications they build will not interfere with one another. These containers are
+                portable, so when a developer is ready to ship off their application to the Quality Assurance team for
+                testing, the team does not have to install all of the dependent software required for the application.
+                Therefore the work environment is consistent and reliable throughout. Docker containers also make it
+                easy to scale systems, which simplifies deployment processes.
+            </p>
+            <p></p>
+            <img class="card-img-top" src="images/facebook.png" alt="Card image cap">
+            <p></p>
+            <p>
+                Three important terms to know when using Docker are Dockerfile, Docker Image, and Docker Container.
+                Edureka.co defines them below:
+            </p>
+            <p></p>
+            <p>Dockerfile: A Dockerfile is a text document which contains all the commands that a user can call on the
+                command line to assemble an image. So, Docker can build images automatically by reading the instructions
+                from a Dockerfile. You can use docker build to create an automated build to execute several command-line
+                instructions in succession.</p>
+            <p></p>
+            <p> Docker Image: In layman terms, Docker Image can be compared to a template which is used to create Docker
+                Containers. So, these read-only templates are the building blocks of a Container. You can use docker run
+                to run the image and create a container.
+
+                Docker Images are stored in the Docker Registry. It can be either a user’s local repository or a public
+                repository like a Docker Hub which allows multiple users to collaborate in building an application.</p>
+            <p>
+
+            </p>
+            <p>Docker Container: It is a running instance of a Docker Image as they hold the entire package needed to
+                run the application. So, these are basically the ready applications created from Docker Images which is
+                the ultimate utility of Docker. </p>
+
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <h1></h1>
+            <p></p>
+            <img class="card-img-top" src="images/internetfunny.jpg" alt="Card image cap">
+            <p></p>
+            <p></p>
+            <img class="card-img-top" src="images/people.jpg" alt="Card image cap">
+            <p></p>
+            <p></p>
+            <img class="card-img-top" src="images/social2.jpg" alt="Card image cap">
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
