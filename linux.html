@@ -92,7 +92,49 @@
                 because the first tells the location to be copies and the second is where it will be copied.</p>
             <p><strong>mv:</strong> This command is used to move files through a command line. It can also be used to
                 rename a file.</p>
+            <p></p>
+            <H1></H1>
+            <p></p>
+            <h5>How to log into your docker container</h5>
+            <p></p>
+            <p>
+                A container is a runnable instance of an image. You can create, start, stop, move, or delete a container
+                using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it,
+                or even create a new image based on its current state. A container is defined by its image as well as
+                any configuration options you provide to it when you create or start it. When a container is removed,
+                any changes to its state that are not stored in persistent storage disappear.
+            </p>
+            <p></p>
+            <p><strong>1.</strong> Enter the command [ docker run -it ubuntu /bin/bash ] into Terminal or Windows
+                PowerShell. the command runs the container and attaches to stdin, the standard input, where the
+                /bin/bash process is opened.</p>
+            <p></p>
+            <img src="images/dockerlogin1a.png" class="card-img-top" alt="..." style="height: 200px">
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <p><strong>2.</strong> The command [ ls ] then shows the file system from linux that is inside the
+                container. </p>
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <img src="images/dockerlogin1b.png" class="card-img-top" alt="..." style="height: 200px">
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <p><strong>3.</strong> In a second PowerShell, enter the command [ docker ps ]. This will list the currently
+                running containers. In the image below, you can see the current container (ID: a422d4023e52).</p>
+            <p></p>
+            <img src="images/dockerlogin1.PNG" class="card-img-top" alt="..." style="height: 300px">
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <p><strong>4.</strong> Enter the [ exit ] command to leave the shell session.</p>
+            <p></p>
+            <p>
 
+            </p>
+            <img src="images/docker2.jpg" class="card-img-top" alt="..." style="height: 500px">
 
         </div>
         <div class="col-md-1"></div>
@@ -100,6 +142,9 @@
             <h1></h1>
             <p></p>
             <img class="card-img-top" src="images/linux3.png" alt="Card image cap">
+            <p></p>
+            <p></p>
+            <img class="card-img-top" src="images/ubuntu.jpg" alt="Card image cap">
             <p></p>
             <p></p>
 
