@@ -59,12 +59,78 @@
             <p></p>
             <h2>Virtualization vs Containerization</h2>
             <p></p>
+            <img src="images/compare1.png" class="card-img-top" alt="..." style="height: 300px">
+            <p></p>
+            <p>
+                <a href="virtualization.html" class="text">Virtualization</a> and <a href="containerization.html"
+                                                                                     class="text">Containerization</a>
+                are both computing environments that are isolated from the rest of the system. Virtualization uses
+                virtual machines while containerization uses containers to package the operating systems. They both have
+                differences and similarities as well as advantages and disadvantages based on project needs.
+            </p>
+            <p></p>
+            <h5>Virtualization</h5>
+            <p>
+                In virtualization, hypervisors are software used to separate resources from the physical machine to be
+                partitioned and dedicated to its virtual machine. The hypervisor relays instructions issued to the VM
+                that requires additional resources from the physical machine.
+            </p>
+            <p></p>
+            <p>Advantages of virtual machines:</p>
+            <ul>
+                <li>Each virtual machine acts as a data folder and each can be moved or copied as any other file.</li>
+                <li>Teams can centralize workloads and run several operating systems without increasing overhead.</li>
+                <li>Applications and operating systems can be updated without interrupting the user experience.</li>
+            </ul>
+            <p></p>
+            <p>Disadvantages of virtual machines:</p>
+            <ul>
+                <li>Requires a significant amount of RAM and CPU resources. Each virtual machine has an operating system
+                    and a virtual copy of its hardware.
+                </li>
+                <li>Software development life cycle is more complex for virtual machines due to its required
+                    resources.
+                </li>
+                <li>Switching between public clouds, private clouds, and traditional data centers is challenging.</li>
+            </ul>
+            <p></p>
+            <h5>Containerization</h5>
+            <p>
+                Software containers act like shipping containers except they hold different parts of an application
+                within its libraries and framework. The container shares the kernel of the host operating system with
+                other containers and the shared parts are read-only. This makes containers lightweight.
+            </p>
+            <p></p>
+            <p>Advantages of containers:</p>
+            <ul>
+                <li>Multiple containers can be deployed on one server because they are lightweight.</li>
+                <li>There is only one operating system to maintain.</li>
+                <li>Scaling up is quick and easy since little server space is needed.</li>
+            </ul>
+            <p></p>
+            <p>Disadvantages of containers:</p>
+            <ul>
+                <li>Less secure because all containers share the same operating system.</li>
+                <li>Containers on the same host must be able to run on the same operating system.</li>
+                <li>Containerization is fairly new and can be a challenging process to adapt to.</li>
+            </ul>
+            <p></p>
+            <h5>Comparing the two:</h5>
+            <p>
+                Deciding which of the two is best for you will depend on the intended use. One approach to consider
+                Containers versus virtual machines is that while VMs run a few distinctive working frameworks on one
+                process hub, while containers offer the chance to virtualize the working framework itself. Containers
+                allow us to virtualize and operating system to run multiple workloads on one system while virtual
+                machines allows virtualized hardware to run multiple operating systems.
+            </p>
+            <p></p>
+            <img src="images/dockercontainer.png" class="card-img-top" alt="..." style="height: 500px">
+            <p></p>
+
 
         </div>
     </div>
 </div>
-
-
 
 
 <!-- Optional JavaScript; choose one of the two! -->
