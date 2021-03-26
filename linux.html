@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This website is a brief history of the Internet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Docker, Linux, and Containerization</title>
+</head>
+<body>
+<h2>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="index.html">IS601</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Docker, Linux, and Containerization
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="virtualization.html">Virtualization</a>
+                            <a class="dropdown-item" href="containerization.html">Containerization</a>
+                            <a class="dropdown-item" href="compare.html">Virtualization vs Containerization</a>
+                            <a class="dropdown-item" href="webtutorial.html">Tutorial: Web Server with Docker</a>
+                            <a class="dropdown-item active" href="linux.html">Linux Commands</a>
+                            <a class="dropdown-item" href="pytutorial.html">Tutorial: Docker and Python</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1></h1>
+            <p></p>
+            <h2>Linux Commands</h2>
+            <p></p>
+            <h5>What is Linux?</h5>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/Linux" class="text">Linux</a> is an open source operating system.
+                An operating system is the software that directly manages a system’s hardware and resources, like CPU,
+                memory, and storage. It makes the connections between all of your software and the physical resources
+                that do the work. Linux is simply an operating system’s kernel. The Linux kernel is the core interface
+                between a computer’s hardware and processes; it is used to communicate between the two.
+            </p>
+            <p>
+                Linux Shell or Terminal is the program that receives commands from the user and directs it to the OS to
+                be processed and display the output. The basic commands below can be used in the Linux Shell.
+            </p>
+            <h5>Basic Linux Commands</h5>
+            <p><strong>pwd:</strong> This command is used to determine which directory you are in. It also gives the
+                absolute path that starts from the root. This is denoted by a forward slash /.</p>
+            <p><strong>ls:</strong> This command is used to determine what files are in the directory you are in.</p>
+            <p><strong>cd:</strong> This command is used to go to a specific directory. There are different functions of
+                the cd command: cd / is used to change to the root directory (the first directory in the filesystem); cd
+                ~ is used to change to the home directory; cd .. is used to move to the parent directory of a current
+                directory.</p>
+            <p><strong>mkdir:</strong> This command is used to create a folder or directory. It can also be used to
+                create multiple directories at once.</p>
+            <p><strong>rmdir:</strong> This command is used to delete an empty directory. It will remove every directory
+                specified in the command line. </p>
+            <p><strong>rm:</strong> This command is used to delete files and directories. It will delete the folder and
+                the files it contains. rm –r is used to delete only the directory.</p>
+            <p><strong>touch:</strong> This command is used to create a file.</p>
+            <p><strong>man:</strong> This command stands for manual and is used to learn more about a command and how to
+                use it.</p>
+            <p><strong>cp:</strong> This command is used to copy file through a command line. It is done in two steps
+                because the first tells the location to be copies and the second is where it will be copied.</p>
+            <p><strong>mv:</strong> This command is used to move files through a command line. It can also be used to
+                rename a file.</p>
+            <p></p>
+            <H1></H1>
+            <p></p>
+            <h5>How to log into your docker container</h5>
+            <p></p>
+            <p>
+                A container is a runnable instance of an image. You can create, start, stop, move, or delete a container
+                using the Docker API or CLI. You can connect a container to one or more networks, attach storage to it,
+                or even create a new image based on its current state. A container is defined by its image as well as
+                any configuration options you provide to it when you create or start it. When a container is removed,
+                any changes to its state that are not stored in persistent storage disappear.
+            </p>
+            <p></p>
+            <p><strong>1.</strong> Enter the command [ docker run -it ubuntu /bin/bash ] into Terminal or Windows
+                PowerShell. the command runs the container and attaches to stdin, the standard input, where the
+                /bin/bash process is opened.</p>
+            <p></p>
+            <img src="images/dockerlogin1a.png" class="card-img-top" alt="..." style="height: 200px">
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <p><strong>2.</strong> The command [ ls ] then shows the file system from linux that is inside the
+                container. </p>
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <img src="images/dockerlogin1b.png" class="card-img-top" alt="..." style="height: 200px">
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <p><strong>3.</strong> In a second PowerShell, enter the command [ docker ps ]. This will list the currently
+                running containers. In the image below, you can see the current container (ID: a422d4023e52).</p>
+            <p></p>
+            <img src="images/dockerlogin1.PNG" class="card-img-top" alt="..." style="height: 300px">
+            <p></p>
+            <h1></h1>
+            <p></p>
+            <p><strong>4.</strong> Enter the [ exit ] command to leave the shell session.</p>
+            <p></p>
+            <p>
+
+            </p>
+            <img src="images/docker2.jpg" class="card-img-top" alt="..." style="height: 500px">
+
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <h1></h1>
+            <p></p>
+            <img class="card-img-top" src="images/linux3.png" alt="Card image cap">
+            <p></p>
+            <p></p>
+            <img class="card-img-top" src="images/ubuntu.jpg" alt="Card image cap">
+            <p></p>
+            <p></p>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
